@@ -13,5 +13,6 @@ class Category extends Model implements CategotyTranslation
     use HasFactory;
 
     public $translatedAttributes = ['title', 'content'];
-    protected $fillable = ['author'];
+    protected $fillable = ['id', 'image', 'parent', 'created_at', 'updated_at', 'deleted_at'];
+    
 }
